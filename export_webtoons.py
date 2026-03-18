@@ -69,8 +69,8 @@ def main():
             writer.writerow({k: out.get(k, "") for k in fieldnames})
     print(f"데이터를 {csv_path} 파일로 저장했습니다.")
 
-    # 사람이 보기 좋은 CSV (엑셀/노션 업로드용)
-    pretty_csv_path = "웹툰_제출용.csv"
+    # 사람이 보기 좋은 CSV (제출/공유용 요약본)
+    pretty_csv_path = "webtoons_submission_summary.csv"
     # 제출/공유용 컬럼 (별점은 현재 수집 제약이 있어 placeholder로 남김)
     pretty_fields = ["순위", "제목", "최근화_별점", "평균_별점", "링크"]
     with open(pretty_csv_path, "w", encoding="utf-8-sig", newline="") as f:

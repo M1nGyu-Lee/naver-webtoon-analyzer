@@ -9,6 +9,7 @@ env/
 # local outputs
 webtoons.json
 webtoons.csv
+webtoons_submission_summary.csv
 debug_webtoon_list.html
 
 # OS / editor

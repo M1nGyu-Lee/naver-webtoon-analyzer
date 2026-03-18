@@ -8,7 +8,7 @@
 
 - **데이터 수집/정규화**
   - `export_webtoons.py` 실행 시 `webtoons.json`, `webtoons.csv` 생성
-  - 제출/공유용 CSV `웹툰_제출용.csv`도 함께 생성(엑셀/노션용)
+  - 제출/공유용 요약 CSV `webtoons_submission_summary.csv`도 함께 생성(엑셀용)
 - **탐색용 카드 UI (Tkinter)**
   - 썸네일/제목/번호(#rank) 카드 뷰
   - 제목 검색, 태그 필터(구조), 초기화, 마우스 휠 스크롤
@@ -49,13 +49,13 @@ python export_webtoons.py
 
 - `webtoons.json`
 - `webtoons.csv`
-- `웹툰_제출용.csv`
+- `webtoons_submission_summary.csv`
 
 각 파일의 용도는 아래와 같습니다.
 
 - `webtoons.json`: 크롤링 결과 원본(탐색 UI `main.py`가 읽는 파일)
 - `webtoons.csv`: 분석/스크립트용 원본(콘솔/그래프 분석 코드가 읽는 파일)
-- `웹툰_제출용.csv`: 엑셀/노션에 보기 좋게 정리한 제출용 요약본
+- `webtoons_submission_summary.csv`: 엑셀에서 열기 좋은 제출/공유용 요약본(`utf-8-sig` 인코딩)
 
 ### 3) 탐색 UI 실행
 
