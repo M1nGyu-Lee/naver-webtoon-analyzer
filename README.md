@@ -87,15 +87,7 @@ python analyze_rank_plot.py
 
 ## 스크린샷
 
-아래 경로로 스크린샷 파일을 추가하면 README에서 바로 보입니다.
-
-- `screenshots/ui_light.png`: 라이트 모드 메인 화면
-- `screenshots/ui_dark.png`: 다크 모드 메인 화면
-- `screenshots/graph_select.png`: 그래프 선택 창
-- `screenshots/graphs_compare.png`: 선택 웹툰 그래프 결과(여러 그래프 뜬 화면)
-- `screenshots/rank_plots.png`: 상/하위 랭크 그래프 결과
-
-README에 이미지가 보이도록, 위 파일명으로 저장해서 `screenshots/` 폴더에 넣어주세요.
+프로젝트 실행 화면 및 분석 결과 예시는 아래와 같습니다.
 
 ![UI Light](screenshots/ui_light.png)
 ![UI Dark](screenshots/ui_dark.png)
