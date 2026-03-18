@@ -8,7 +8,7 @@
 
 - **데이터 수집/정규화**
   - `export_webtoons.py` 실행 시 `webtoons.json`, `webtoons.csv` 생성
-  - 사람이 보기 좋은 `webtoons_pretty.csv`도 함께 생성(엑셀/노션용)
+  - 제출/공유용 CSV `웹툰_제출용.csv`도 함께 생성(엑셀/노션용)
 - **탐색용 카드 UI (Tkinter)**
   - 썸네일/제목/번호(#rank) 카드 뷰
   - 제목 검색, 태그 필터(구조), 초기화, 마우스 휠 스크롤
@@ -49,7 +49,7 @@ python export_webtoons.py
 
 - `webtoons.json`
 - `webtoons.csv`
-- `webtoons_pretty.csv`
+- `웹툰_제출용.csv`
 
 ### 3) 탐색 UI 실행
 
