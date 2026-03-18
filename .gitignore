@@ -1,0 +1,18 @@
+__pycache__/
+*.pyc
+*.pyo
+.Python
+.venv/
+venv/
+env/
+
+# local outputs
+webtoons.json
+webtoons.csv
+debug_webtoon_list.html
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.vscode/
+
