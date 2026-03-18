@@ -51,6 +51,12 @@ python export_webtoons.py
 - `webtoons.csv`
 - `웹툰_제출용.csv`
 
+각 파일의 용도는 아래와 같습니다.
+
+- `webtoons.json`: 크롤링 결과 원본(탐색 UI `main.py`가 읽는 파일)
+- `webtoons.csv`: 분석/스크립트용 원본(콘솔/그래프 분석 코드가 읽는 파일)
+- `웹툰_제출용.csv`: 엑셀/노션에 보기 좋게 정리한 제출용 요약본
+
 ### 3) 탐색 UI 실행
 
 ```bash
@@ -64,12 +70,12 @@ python analyze_catalog.py
 python analyze_rank_plot.py
 ```
 
-## 분석 요약(예시)
+## 분석 요약
 
-- rank 상위 구간과 하위 구간의 작품 리스트를 비교해, 노출 순서가 단순 인기순이 아닌 **편성/노출 전략이 혼합된 결과**일 수 있음을 관찰했습니다.
-- 상위 구간에는 신작/중작이, 하위 구간에는 인지도가 높은 장기 연재작이 함께 포함되는 패턴이 확인되었습니다.
+본 프로젝트의 `rank`는 네이버 웹툰 `weekday` API가 반환하는 기본 정렬 순서를 “노출 우선순위”의 proxy로 해석한 값입니다.
 
-> 위 문장은 `analyze_catalog.py` / `analyze_rank_plot.py` 실행 결과를 바탕으로 README에 구체적으로 보강할 수 있습니다.
+- `analyze_catalog.py`: 상위/하위 구간의 작품 리스트를 출력해 빠르게 비교할 수 있습니다.
+- `analyze_rank_plot.py`: 상위 10개/하위 10개를 막대그래프로 시각화합니다.
 
 ## 한계 및 확장 아이디어
 
